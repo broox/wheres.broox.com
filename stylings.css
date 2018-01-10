@@ -1,0 +1,49 @@
+/* salmon: #FF776B */
+
+html { height: 100%; margin: 0px; padding: 0px; }
+body { height: 100%; margin: 0px; padding: 0px; font:14px helvetica,verdana,arial; }
+#brooxStream { position:absolute; top:0; left:0; bottom:0; width: 250px; border:1px solid #0051A2; overflow-y:scroll; z-index:1000; background-color:#FFF; display:none; }
+h1 { font-size: 20px; padding: 16px 16px 13px; margin:0; background-color:#0051A2; color:#FFF; position:relative; }
+img.pulse { position:absolute; right:10px; top:17px; }
+a.hideStream { position:absolute; right:15px; top:13px; color:#FFF; text-decoration:none; font-weight:normal; }
+h2 { font-size: 16px; padding:0; margin: 2px 0 8px; }
+p { padding:0; margin:0; }
+ul { padding:0; margin:0; border-top:1px solid #0051A2; }
+li { background-color:#FFF; list-style:none; margin:0; padding:8px 16px; border-bottom:1px solid #0051A2; color:#000; border-left: 4px solid #0051A2; border-right: 4px solid #0051A2; }
+li:hover { background-color:#0051A2; cursor:pointer; color:#fff; opacity:1.0; }
+
+#brooxMap { position:absolute; top:0; left:0; bottom:0; right:0; /* height:100%; width:100% */ }
+.brooxBubbleContent { font:12px Helvetica; max-width:350px; }
+/* .brooxBubbleContent > div { max-height:200px; overflow-y:auto; } */
+.brooxBubbleContent h6 { margin:0 0 5px; font-size:1.2em; }
+.brooxBubbleContent p { margin: 0 0 5px; }
+.brooxBubbleContent span.meta { color:#666; font-size:0.8em; float:right; }
+.brooxBubbleContent img, li img { width:100px; height:100px; float:left; margin-right: 5px; }
+.clear { clear:both }
+
+header { position:absolute; top:0; left:0; margin: 0px; padding: 0px; z-index:1337; }
+header div { padding:4px; display:none; font-size:12px; position:relative; color:#FFF; }
+header div input { padding: 0; margin: 0 6px 0 0; }
+header div label { width:100%; cursor:pointer;}
+
+header #lastCheckIn {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 102, 204);
+
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 102, 204, 0.8);
+
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#990066CC, endColorstr=#990066CC);
+
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#990066CC, endColorstr=#990066CC)";
+}
+
+header #lastTracked {
+    background: rgb(177, 0, 0);
+    background: rgba(177, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99B10000, endColorstr=#99B10000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99B10000, endColorstr=#99B10000)";
+    -moz-border-radius-bottomright: 5px; border-bottom-right-radius: 5px;
+}

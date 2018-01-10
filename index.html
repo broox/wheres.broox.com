@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+  <link rel="stylesheet" href="/stylings.css" type="text/css"/>
+  <title>where's broox?</title> 
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="/broox.js"></script>
+  <script type="text/javascript" src="/brooxMap.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() { 
+      broox.map.initialize();
+    });
+  </script> 
+</head>
+<body>
+  <header>
+    <div id="lastCheckIn"><img class="pulse" src="/pulse.gif"/></div>
+    <div id="lastTracked"></div>
+  </header>
+
+  <div id="brooxMap"></div>
+  <div id="brooxBubble" style="display:none;">
+    <div class="brooxBubbleItem">
+      <h6>&nbsp;</h6>
+      <p>&nbsp;</p>
+      <span class="meta">&nbsp;</span>
+      <br class="clear"/>
+    </div>
+  </div>
+</body>
+</html> 
+
+<!-- 
+TODO:
+HTML5 shim
+update relative times with js in realtime
+-->
